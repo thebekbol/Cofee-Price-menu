@@ -1,0 +1,72 @@
+@import "./ScssFiles/reset";
+@import "./ScssFiles/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.container{
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header{
+  &--logo{
+    margin-right: 10px;
+    .text-logo{
+      color: #5E2802;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  &--search{
+    background: #F5E9E1;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    width: 43%;
+    font-size: 1.1rem;
+  }
+  &--items{
+    &--dark-mode-btn{
+      padding: 15px;
+      border-radius: 50%;
+      transform: rotate(-45deg);
+      border: 2px solid  #5E2802;
+      animation: language linear 5s infinite;
+
+      @keyframes language {
+        0%{
+          transform: rotate(0);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &--language-btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #5E2802;
+      border: 3px solid #5E2802;
+      padding: 2px  8px 0 8px;
+      border-radius: 7px;
+      font-size: 0.7rem;
+      transform: scale(.7);
+      &:hover .globe{
+        animation: globe linear 4s infinite;
+      }
+
+      @keyframes globe {
+       0%{
+         transform: rotateX(0) rotateY(0);
+       }
+        100%{
+          transform: rotateX(0) rotateY(360deg);
+        }
+
+      }
+    }
+  }
+}
+
+
