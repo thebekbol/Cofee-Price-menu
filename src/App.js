@@ -1,10 +1,16 @@
 import './App.scss';
-import Elements from "./components/elements";
+import MainMenu from "./components/MainMenu";
+import {Route, Routes} from "react-router-dom";
+import FoodCard from "./components/FoodCard";
+
 
 function App() {
   return (
     <div className="App">
-        <Elements/>
+        <Routes>
+            <Route path="/" element={<MainMenu/>}/>
+            <Route path="/menu/:id" element={<FoodCard/>}/>
+        </Routes>
     </div>
   );
 }

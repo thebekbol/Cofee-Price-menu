@@ -3,16 +3,19 @@ import logo from "../../img/pngwing 1.svg"
 import bell from "../../img/Bell.svg"
 import basket from "../../img/basket.svg"
 import language from "../../img/globus.svg"
+import {Link} from "react-router-dom";
 
 
 const Header = () => {
     return (
         <div className="container">
            <div className="header flex py-2 items-end justify-between">
-               <div className="header--logo flex items-end">
-                   <img src={logo} alt=""/>
-                   <h1 className="text-logo font-bold text-3xl">Coffee Place</h1>
-               </div>
+              <Link to="/">
+                  <div className="header--logo flex items-end">
+                      <img src={logo} alt=""/>
+                      <h1 className="text-logo font-bold text-3xl">Coffee Place</h1>
+                  </div>
+              </Link>
                    <input placeholder="search" className="header--search mx-3" type="text"/>
                <div className="header--items flex items-center pt-4">
                    <img className="mx-3" src={bell} alt=""/>

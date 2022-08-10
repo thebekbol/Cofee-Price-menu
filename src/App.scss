@@ -69,4 +69,23 @@
   }
 }
 
+.boxes{
+  width: 21.3%;
+  background: #F5E9E1;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  &--titles{
+    padding: 5px;
+    &--name{
+      font-weight: 500;
+      font-size: 24px;
+      color: #5E2802
+    }
+    &--subtitle{
+      color: rgba(94, 40, 2, 0.7)
+    }
+  }
+}
+
 
