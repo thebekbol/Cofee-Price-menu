@@ -3,7 +3,7 @@ import foods_image_2 from "../img/menu-img-2.svg";
 import foods_image_3 from "../img/menu-img-3.svg";
 import foods_image_4 from "../img/menu-img-4.svg";
 import foods_image_5 from "../img/menu-img-5.svg";
-import foods_image_6 from "../img/menu-img-6.svg";
+import foods_image_6 from "../img/menu-img-6.png";
 import foods_image_7 from "../img/menu-img-7.svg";
 import foods_image_8 from "../img/menu-img-8.svg";
 import foods_image_9 from "../img/menu-img-9.svg";
