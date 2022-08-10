@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const MenuPage = ({el}) => {
 
-    const {name, subTitle, image, id} = el
+    const {name, subTitle, image} = el
 
     return (
            <div className="5 m-4 boxes">
