@@ -7,9 +7,10 @@ import FoodCard from "./components/FoodCard";
 function App() {
   return (
     <div className="App">
+
         <Routes>
             <Route path="/" element={<MainMenu/>}/>
-            <Route path="/menu/:id" element={<FoodCard/>}/>
+            <Route path="/menu/:name" element={<FoodCard/>}/>
         </Routes>
     </div>
   );

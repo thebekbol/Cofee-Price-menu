@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 const Header = () => {
     return (
         <div className="container">
-           <div className="header flex py-2 items-end justify-between">
+           <div className="header flex items-end justify-between">
               <Link to="/">
                   <div className="header--logo flex items-end">
                       <img src={logo} alt=""/>
@@ -18,12 +18,12 @@ const Header = () => {
               </Link>
                    <input placeholder="search" className="header--search mx-3" type="text"/>
                <div className="header--items flex items-center pt-4">
-                   <img className="mx-3" src={bell} alt=""/>
-                   <img className="mx-3" src={basket} alt=""/>
+                   <img className="mx-3 cursor-pointer" src={bell} alt=""/>
+                   <img className="mx-3 cursor-pointer" src={basket} alt=""/>
                    <div style={{
                        background: "linear-gradient(#ffffff 50%, #000000 50%)"
-                   }}   className="header--items--dark-mode-btn mx-3"></div>
-                   <div className="header--items--language-btn ml-3">
+                   }}   className="header--items--dark-mode-btn mx-3 cursor-pointer"></div>
+                   <div className="header--items--language-btn ml-3 cursor-pointer">
                        <img className="globe" src={language} alt=""/>
                        <h3 className="font-bold">En</h3>
                    </div>

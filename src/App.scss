@@ -3,13 +3,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@media(max-width: 950px) {
+  .container{
+    width: 90%;
+  }
+}
+
 .container{
-  width: 980px;
+  width: 990px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .header{
+  padding: 10px 10px 20px 10px;
+  width: 990px;
+  position: fixed;
+  background: white;
+  z-index: 5;
   &--logo{
     margin-right: 10px;
     .text-logo{
@@ -69,6 +80,7 @@
   }
 }
 
+
 .boxes{
   width: 21.3%;
   background: #F5E9E1;
@@ -87,5 +99,35 @@
     }
   }
 }
+
+.food-card{
+  &--menu{
+    overflow: auto;
+    height: 90vh;
+    width: 26%;
+    border: 1px solid #5E2802;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+      .active{
+        background: #5E2802;
+        color: #F5E9E1;
+      }
+      &--item{
+        font-family: "Montserrat", sans-serif;
+        padding: 0 15px;
+        border-radius: 5px;
+        font-size: 24px;
+        color: #5E2802;
+        margin: 10px 0;
+      }
+    &--linea{
+      height: 0.5px;
+      background: #5E2802;
+    }
+  }
+}
+
 
 

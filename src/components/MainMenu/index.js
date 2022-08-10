@@ -7,8 +7,8 @@ const MainMenu = () => {
     const {foods} = useSelector(s => s)
 
     return (
-       <section className="py-4">
-           <div className="container">
+       <section className="py-4 pt-20">
+           <div className="main-menu container">
                <div className="flex flex-wrap flex-row justify-between">
                    {
                        foods.map(el => (
