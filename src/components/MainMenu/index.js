@@ -12,7 +12,7 @@ const MainMenu = () => {
                <div className="flex flex-wrap flex-row justify-between">
                    {
                        foods.map(el => (
-                           <MenuPage el={el}/>
+                           <MenuPage el={el} key={el.id}/>
                        ))
                    }
                </div>

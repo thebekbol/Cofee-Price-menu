@@ -10,10 +10,11 @@ function App() {
 
         <Routes>
             <Route path="/" element={<MainMenu/>}/>
-            <Route path="/menu/:name" element={<FoodCard/>}/>
+            <Route path="/menu/:nameId" element={<FoodCard/>}/>
         </Routes>
     </div>
   );
 }
 
 export default App;
+

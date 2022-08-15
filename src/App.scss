@@ -4,31 +4,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 @media(max-width: 950px) {
-  .container{
+  .container {
     width: 90%;
   }
 }
 
-.container{
+.container {
   width: 990px;
   margin: 0 auto;
   padding: 0 5px;
 }
 
-.header{
+.header {
   padding: 10px 10px 20px 10px;
   width: 990px;
   position: fixed;
   background: white;
   z-index: 5;
-  &--logo{
+
+  &--logo {
     margin-right: 10px;
-    .text-logo{
+
+    .text-logo {
       color: #5E2802;
       font-family: 'Montserrat', sans-serif;
     }
   }
-  &--search{
+
+  &--search {
     background: #F5E9E1;
     border: none;
     border-radius: 8px;
@@ -36,42 +39,62 @@
     width: 43%;
     font-size: 1.1rem;
   }
-  &--items{
-    &--dark-mode-btn{
+
+  &--items {
+    &--basket-logo{
+      position: relative;
+      .quantity{
+        color: #Ffffff;
+        background: #5E2802;
+        border-radius: 50%;
+        position: absolute;
+        top: -8px;
+        right: 6px;
+        font-size: 14px;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &--dark-mode-btn {
       padding: 15px;
       border-radius: 50%;
       transform: rotate(-45deg);
-      border: 2px solid  #5E2802;
+      border: 2px solid #5E2802;
       animation: language linear 5s infinite;
 
       @keyframes language {
-        0%{
+        0% {
           transform: rotate(0);
         }
-        100%{
+        100% {
           transform: rotate(360deg);
         }
       }
     }
-    &--language-btn{
+
+    &--language-btn {
       display: flex;
       flex-direction: column;
       align-items: center;
       color: #5E2802;
       border: 3px solid #5E2802;
-      padding: 2px  8px 0 8px;
+      padding: 2px 8px 0 8px;
       border-radius: 7px;
       font-size: 0.7rem;
       transform: scale(.7);
-      &:hover .globe{
+
+      &:hover .globe {
         animation: globe linear 4s infinite;
       }
 
       @keyframes globe {
-       0%{
-         transform: rotateX(0) rotateY(0);
-       }
-        100%{
+        0% {
+          transform: rotateX(0) rotateY(0);
+        }
+        100% {
           transform: rotateX(0) rotateY(360deg);
         }
 
@@ -81,50 +104,184 @@
 }
 
 
-.boxes{
+.boxes {
   width: 21.3%;
   background: #F5E9E1;
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
-  &--titles{
+
+  &--titles {
     padding: 5px;
-    &--name{
+
+    &--name {
       font-weight: 500;
       font-size: 24px;
       color: #5E2802
     }
-    &--subtitle{
+
+    &--subtitle {
       color: rgba(94, 40, 2, 0.7)
     }
   }
 }
 
-.food-card{
-  &--menu{
+.food-card {
+  display: flex;
+  &--menu {
     overflow: auto;
-    height: 90vh;
+    height: 80vh;
     width: 26%;
     border: 1px solid #5E2802;
     padding: 15px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-      .active{
-        background: #5E2802;
-        color: #F5E9E1;
-      }
-      &--item{
-        font-family: "Montserrat", sans-serif;
-        padding: 0 15px;
-        border-radius: 5px;
-        font-size: 24px;
-        color: #5E2802;
-        margin: 10px 0;
-      }
-    &--linea{
+    //margin-right: 50px;
+
+    .active {
+      background: #5E2802;
+      color: #F5E9E1;
+    }
+
+    &--item {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      padding: 0 15px;
+      border-radius: 5px;
+      font-size: 24px;
+      color: #5E2802;
+      margin: 10px 0;
+    }
+
+    &--linea {
       height: 0.5px;
       background: #5E2802;
+    }
+  }
+  &--foods{
+    width: 70%;
+    overflow: auto;
+    height: 80vh;
+    &--box{
+      border-radius: 20px;
+      padding: 5px;
+      background: #F5E9E1;
+      width: 30%;
+      margin: 10px;
+      h1{
+        padding: 6px 5px 0 5px;
+        font-family: "Montserrat" , sans-serif;
+        font-size: 18px;
+        color: #5E2802;
+      }
+      p{
+        font-family: "Montserrat" , sans-serif;
+        margin: 0;
+        padding: 0 5px;
+        font-size: 12px;
+        color: #5E2802;
+      }
+      div{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 5px;
+        h3{
+          color: #5E2802;
+        }
+        .basket-icon{
+          cursor: grab;
+          background: #5E2802;
+          color: white;
+          border-radius: 4px;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+#defaultModal{
+ left: 21%;
+  top: 7%;
+  width: 900px;
+  height: 620px;
+
+
+  .modal-window{
+    height: 100%;
+    width: 100%;
+    background: #F5E9E1;
+    color: #5E2802;
+    &--header{
+      button{
+        transform: scale(1.3);
+        svg{
+          color: #5E2802;
+        }
+        &:hover svg{
+          color: white;
+        }
+      }
+      &--logo{
+        img{
+          transform: scale(.8);
+        }
+        h1{
+          font-family: "Oswald", sans-serif;
+        }
+      }
+    }
+    &--products{
+      margin: 0 auto;
+      width: 85%;
+      &--titles{
+        position: relative;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+        &:before{
+          width: 100%;
+          height: 1px;
+          content: "";
+          position: absolute;
+          background: #5E2802;
+          bottom: 0;
+          left: 0;
+        }
+        &:after{
+          width: 100%;
+          height: 1px;
+          content: "";
+          position: absolute;
+          background: #5E2802;
+          bottom: -3px;
+          left: 0;
+        }
+      }
+      &--linea{
+        margin: 15px 0;
+        width: 100%;
+        height: 250px;
+        overflow: auto;
+      }
+      textarea{
+        background: #d7d2ce;
+        //margin-top: 60px;
+        margin: 10px auto;
+        width: 100%;
+        height: 70px;
+      }
+    }
+    &--footer{
+      display: flex;
+      align-items: center;
+      button{
+        background: #5E2802;
+        color: #F5E9E1;
+        padding: 5px 15px;
+        border-radius: 15px;
+      }
     }
   }
 }

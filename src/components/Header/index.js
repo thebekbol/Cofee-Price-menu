@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from "../../img/pngwing 1.svg"
-import bell from "../../img/Bell.svg"
-import basket from "../../img/basket.svg"
-import language from "../../img/globus.svg"
+import logo from "../../img/pngwing 1.svg";
+import bell from "../../img/Bell.svg";
+import language from "../../img/globus.svg";
 import {Link} from "react-router-dom";
+import Basket from "../Basket";
 
 
 const Header = () => {
+
     return (
         <div className="container">
            <div className="header flex items-end justify-between">
@@ -19,7 +20,7 @@ const Header = () => {
                    <input placeholder="search" className="header--search mx-3" type="text"/>
                <div className="header--items flex items-center pt-4">
                    <img className="mx-3 cursor-pointer" src={bell} alt=""/>
-                   <img className="mx-3 cursor-pointer" src={basket} alt=""/>
+                   <Basket/>
                    <div style={{
                        background: "linear-gradient(#ffffff 50%, #000000 50%)"
                    }}   className="header--items--dark-mode-btn mx-3 cursor-pointer"></div>
