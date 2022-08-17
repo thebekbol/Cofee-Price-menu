@@ -6,35 +6,31 @@ import {useDispatch, useSelector} from "react-redux";
 
 const BasketPage = ({el}) => {
 
-    const {basket} = useSelector(s => s)
+    const {darkMode} = useSelector(s => s)
     const dispatch = useDispatch()
-    const resultPrice = basket.reduce((acc, el) => {
-        console.log(el.price)
-        return el.price.slice(0, -1) * el.quantity + acc
-    }, 0)
 
     return (
         <tbody className="mb-4 flex items-start">
         <tr>
-            <th scope="col" className="pr-6">
+            <td className="pr-6">
                 <img src={el.img} width={80} alt=""/>
-            </th>
-            <th scope="col" className="  w-14 mr-2">
+            </td>
+            <td className="  w-14 mr-2">
                 <h1 className="mx-3">{el.title}</h1>
-            </th>
-            <th scope="col" className="px-6 cursor-pointer">
-                                                    <span className="flex items-center mx-4">
-                                                    <AiOutlineMinus/>
-                                                        {el.quantity}
-                                                        <AiOutlinePlus onClick={() => dispatch(addToBasket(el))}/>
+            </td>
+            <td className="px-6 w-10">
+                                                    <span className="quantity-span flex items-center mx-4">
+                                                    <AiOutlineMinus className="cursor-pointer"/>
+                                                        <p className="mx-2">{el.quantity}</p>
+                                                        <AiOutlinePlus onClick={() => dispatch(addToBasket(el))} className="cursor-pointer"/>
                                                 </span>
-            </th>
-            <th scope="col" className="px-6">
-                <p className="mx-4">{resultPrice}</p>
-            </th>
-            <th scope="col" className="px-6">
+            </td>
+            <td className="px-6 w-8">
+                <p className="mx-4">{el.price.slice(0, -1) * el.quantity}som</p>
+            </td>
+            <td className="px-6 w-8">
                 <RiDeleteBinLine className="cursor-pointer" onClick={() => dispatch(deleteFromBasket(el.id))}/>
-            </th>
+            </td>
         </tr>
         </tbody>
     );

@@ -10,7 +10,7 @@ import foods_image_9 from "../img/menu-img-9.svg";
 import foods_image_10 from "../img/menu-img-10.svg";
 import foods_image_11 from "../img/menu-img-11.svg";
 import foods_image_12 from "../img/menu-img-12.svg";
-import {ADD_TO_BASKET, DELETE_ALL_BASKET, DELETE_FROM_BASKET} from "./ActionTypes";
+import {ADD_TO_BASKET, CHANGE_THEME, DELETE_ALL_BASKET, DELETE_FROM_BASKET} from "./ActionTypes";
 import basket from "../components/Basket";
 
 
@@ -23,56 +23,56 @@ const initialState = {
             image: foods_image_1,
             sections: [
                 {
-                    id: 1,
+                    id: 101,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 102,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 103,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 104,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 105,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 106,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 107,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_1,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 108,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_1,
@@ -88,42 +88,42 @@ const initialState = {
             image: foods_image_2,
             sections: [
                 {
-                    id: 1,
+                    id: 201,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_2,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 202,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_2,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 203,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_2,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 204,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_2,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 205,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_2,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 206,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_2,
@@ -138,56 +138,56 @@ const initialState = {
             image: foods_image_3,
             sections: [
                 {
-                    id: 1,
+                    id: 301,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 302,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 303,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 304,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 305,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 306,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 307,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_3,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 308,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_3,
@@ -202,56 +202,56 @@ const initialState = {
             image: foods_image_4,
             sections: [
                 {
-                    id: 1,
+                    id: 401,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 402,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 403,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 404,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 405,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 406,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 407,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_4,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 408,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_4,
@@ -266,56 +266,56 @@ const initialState = {
             image: foods_image_5,
             sections: [
                 {
-                    id: 1,
+                    id: 501,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 502,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 503,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 504,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 505,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 506,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 507,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_5,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 508,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_5,
@@ -330,42 +330,42 @@ const initialState = {
             image: foods_image_6,
             sections: [
                 {
-                    id: 1,
+                    id: 601,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_6,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 602,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_6,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 603,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_6,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 604,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_6,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 605,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_6,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 606,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_6,
@@ -380,56 +380,56 @@ const initialState = {
             image: foods_image_7,
             sections: [
                 {
-                    id: 1,
+                    id: 701,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 702,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 703,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 704,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 705,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 706,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 707,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_7,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 708,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_7,
@@ -444,56 +444,56 @@ const initialState = {
             image: foods_image_8,
             sections: [
                 {
-                    id: 1,
+                    id: 801,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 802,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 803,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 804,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 805,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 806,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 807,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_8,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 808,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_8,
@@ -508,56 +508,56 @@ const initialState = {
             image: foods_image_9,
             sections: [
                 {
-                    id: 1,
+                    id: 901,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 902,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 903,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 904,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 905,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 906,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 907,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_9,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 908,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_9,
@@ -572,28 +572,28 @@ const initialState = {
             image: foods_image_10,
             sections: [
                 {
-                    id: 1,
+                    id: 1001,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_10,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 1002,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_10,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 1003,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_10,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 1004,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_10,
@@ -608,56 +608,56 @@ const initialState = {
             image: foods_image_11,
             sections: [
                 {
-                    id: 1,
+                    id: 1101,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 1102,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 1103,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 1104,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 1105,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 1106,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 1107,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_11,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 1108,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_11,
@@ -672,56 +672,56 @@ const initialState = {
             image: foods_image_12,
             sections: [
                 {
-                    id: 1,
+                    id: 1201,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 2,
+                    id: 1202,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 3,
+                    id: 1203,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 4,
+                    id: 1204,
                     title: "Double americano",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 5,
+                    id: 1205,
                     title: "Double cappuccino",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 6,
+                    id: 1206,
                     title: "Latte",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 7,
+                    id: 1207,
                     title: "Americano",
                     size: "220ml",
                     img: foods_image_12,
                     price: "150c"
                 },
                 {
-                    id: 8,
+                    id: 1208,
                     title: "Cappuccino",
                     size: "220ml",
                     img: foods_image_12,
@@ -731,7 +731,7 @@ const initialState = {
         },
     ],
     basket: [],
-    darkMode: false
+    darkMode: JSON.parse(localStorage.getItem("mode")) || false
 }
 
 
@@ -746,7 +746,7 @@ export const Reducer = (state = initialState, action) => {
                 return {...state, basket: state.basket.map(el => el.id === action.payload.id ?
                         {...el, quantity: el.quantity + 1}: el)}
             }else {
-                return {...state, basket: [...state.basket, {...action.payload, quantity: 1, inBasket: true}]}
+                return {...state, basket: [...state.basket, {...action.payload, quantity: 1}]}
             }
         }
         case DELETE_ALL_BASKET: {
@@ -754,8 +754,10 @@ export const Reducer = (state = initialState, action) => {
         }
 
         case DELETE_FROM_BASKET: {
-            delete basket.inBasket
             return {...state, basket: state.basket.filter(el => el.id !== action.payload)}
+        }
+        case CHANGE_THEME: {
+            return {...state, darkMode: action.payload}
         }
 
 

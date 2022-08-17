@@ -5,7 +5,6 @@ import {useSelector} from "react-redux";
 
 const MainMenu = () => {
     const {foods} = useSelector(s => s)
-
     return (
        <section className="py-4 pt-20">
            <div className="main-menu container">

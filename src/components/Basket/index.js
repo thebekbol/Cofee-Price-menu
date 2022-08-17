@@ -3,7 +3,7 @@ import basketLogo from "../../img/basket.svg";
 import {useState} from "react";
 import logo from "../../img/pngwing 1.svg"
 import {useDispatch, useSelector} from "react-redux";
-import {BsEmojiSmileUpsideDown} from "react-icons/bs";
+import {BsBasket2Fill, BsEmojiSmileUpsideDown} from "react-icons/bs";
 import {deleteAllBasket} from "../../redux/ActionCreators";
 import BasketPage from "./basketPage";
 
@@ -11,19 +11,26 @@ const Basket = () => {
     const [modal, setModal] = useState(false)
     const {basket} = useSelector(s => s)
     const dispatch = useDispatch()
-
+    const resultPrice = basket.reduce((acc, el) => {
+        console.log(el.price)
+        return el.price.slice(0, -1) * el.quantity + acc
+    }, 0)
+    const {darkMode} = useSelector(s => s)
     return (
         <div>
             <div onClick={() => setModal(!modal)} className="header--items--basket-logo cursor-pointer">
-                <img className="mx-3" src={basketLogo} alt=""/>
+                <BsBasket2Fill/>
                 {
-                    basket.length ? <div className="quantity">{basket.length}</div> : ""
+                    basket.length ? <div className="quantity" style={{
+                        background: darkMode ? "white" : "",
+                        color: darkMode? "#5E2802" :  "#F5E9E1",
+                    }}>{basket.length}</div> : ""
                 }
             </div>
             <div style={{
                 display: modal ? "block" : "none"
             }} id="defaultModal" className="-1 fixed z-50 md:inset-0 h-modal md:h-full" aria-modal={true} role="dialog">
-                <div className="relative modal-window bg-white rounded-lg shadow">
+                <div className="relative modal-window rounded-lg shadow">
                     <div
                         className="modal-window--header flex justify-between items-center px-4 py-2 rounded-t border-b dark:border-gray-600">
                         <div className="modal-window--header--logo flex items-end">
@@ -44,7 +51,7 @@ const Basket = () => {
                     <div className="p-6 space-y-6 modal-window--products">
                         <div className="flex justify-between modal-window--products--titles">
                             <h2>Basket</h2>
-                            <button onClick={() => dispatch(deleteAllBasket)}>Delete all</button>
+                            <button onClick={() => dispatch(deleteAllBasket())}>Delete all</button>
                         </div>
                         <div className="modal-window--products--linea">
                             <table className={`overflow-y-auto ${basket.length === 0 ? "flex justify-center" : ""}`}>
@@ -61,7 +68,7 @@ const Basket = () => {
                     </div>
 
                     <div className="flex justify-between modal-window--footer px-8">
-                        <h2>Payable: 520som</h2>
+                        <h2>Payable: {resultPrice}som</h2>
                         <button>Place an order</button>
                     </div>
 

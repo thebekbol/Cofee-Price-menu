@@ -18,3 +18,8 @@ function App() {
 
 export default App;
 
+
+// #150000
+// #F5E9E1
+
+// text #F5E9E1
